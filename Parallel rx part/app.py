@@ -6,9 +6,11 @@ connection = db.db_connect()
 db.create_tables(connection)
 
    
-news_api = init_api_conn("c2612454e7474eeaa7ec328a4fc8f71a") #openning connection with api
+news_api = init_api_conn("862b21667b294a1d867f620e8fc1dd9b") #openning connection with api
 
-
+def pprint(x):
+    for i in x:
+        print(i)
 def fill_table_1_With_Data(data):
     data_obj = News('','','','','','')
     
@@ -133,7 +135,7 @@ def main():
 
     print_table_2()
     print('*************')
-    
+
     print_table_3()
     print('*************')
 
@@ -144,5 +146,5 @@ def main():
     print('*************')
     
 
-main()
+#main()
 

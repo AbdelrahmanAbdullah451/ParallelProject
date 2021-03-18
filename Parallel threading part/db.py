@@ -63,7 +63,8 @@ clear5 = "DELETE FROM fifthData;"
 
 
 def db_connect():
-    return sqlite3.connect('data.db')
+    return sqlite3.connect('data_file' , check_same_thread=False)
+
 
 
 
